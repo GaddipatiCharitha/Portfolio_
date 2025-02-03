@@ -1,0 +1,607 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* expertise section starts */
+/* General section styling */
+.experience {
+  background-color: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.experience .heading h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.experience .list-group {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.experience .list-group-item {
+  background-color: #fff; /* White background for items */
+  border: 1px solid #ddd; /* Border for separation */
+  margin-bottom: 10px; /* Space between items */
+  padding: 15px 20px;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience .list-group-item strong {
+  color: #007bff; /* Highlight color for the titles */
+  font-weight: 700;
+}
+
+/* Hover effect for list items */
+.experience .list-group-item:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  /* Mobile-friendly adjustments */
+  .experience .heading h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience .list-group-item {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+.heading small{
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+}
+.expertise a{
+    text-decoration: none;
+    color: #fca61f;
+}
+.expertise a:hover{
+    color: #6f34fe;
+}
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* skill section starts */
+/* General styles for the section */
+.text-muted {
+    color: black; /* Muted gray color for description text */
+    font-size: 1.2rem; /* Increased font size for better visibility */
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling */
+  .text-muted strong {
+    color: #6f34fe; /* Highlighted color for skill categories */
+    font-weight: bold;
+    font-size: 1.3rem; /* Larger font size for categories */
+  }
+  
+  /* List styling */
+  .text-muted ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-muted ul li {
+    background: #f8f9fa; /* Light background for items */
+    padding: 20px 25px; /* Spacious padding for items */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem; /* Increased font size for skills */
+    font-weight: 500;
+    color: #6f34fe; /* Skill text in highlight color */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .text-muted ul li:hover {
+    background: #6f34fe; /* Highlight background on hover */
+    color: #fff; /* Change text color to white on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button styling */
+  .c-btn.h-btn {
+    background: linear-gradient(135deg, #6f34fe, #8f6bff);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem; /* Slightly increased button font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(111, 52, 254, 0.4);
+  }
+  
+  .c-btn.h-btn:hover {
+    background: linear-gradient(135deg, #8f6bff, #6f34fe);
+    box-shadow: 0 6px 15px rgba(111, 52, 254, 0.6);
+    transform: translateY(-3px);
+  }
+  
+  .c-btn.h-btn:focus {
+    outline: none;
+  }
+  
+  /* Rounded button shape */
+  .c-btn.h-btn.rounded-pill {
+    border-radius: 50px;
+    padding: 12px 25px; /* Adjusted padding for larger size */
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .text-muted {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .text-muted ul li {
+      font-size: 1.1rem;
+      padding: 15px 20px;
+    }
+  
+    .c-btn.h-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+/* General styles for the section */
+/* General styles for the section */
+
+  
+  
+  
+  /* Hover effect for list items */
+  .text-muted ul li:hover {
+    background: #6f34fe; /* Highlight background on hover */
+    color: #fff; /* Change text color on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button styling */
+  .c-btn.h-btn {
+    background: linear-gradient(135deg, #6f34fe, #8f6bff);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem; /* Slightly increased button font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(111, 52, 254, 0.4);
+  }
+  
+  .c-btn.h-btn:hover {
+    background: linear-gradient(135deg, #8f6bff, #6f34fe);
+    box-shadow: 0 6px 15px rgba(111, 52, 254, 0.6);
+    transform: translateY(-3px);
+  }
+  
+  .c-btn.h-btn:focus {
+    outline: none;
+  }
+  
+  /* Rounded button shape */
+  .c-btn.h-btn.rounded-pill {
+    border-radius: 50px;
+    padding: 12px 25px; /* Adjusted padding for larger size */
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .text-muted {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .text-muted ul li {
+      font-size: 1.1rem;
+      padding: 15px 20px;
+    }
+  
+    .c-btn.h-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+.text-muted {
+    color: black; /* Muted gray color */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling */
+  .text-muted strong {
+    color: black; /* Highlighted color for strong elements */
+    font-weight: bold;
+  }
+  
+  /* List styling */
+  .text-muted ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  /* Hover effect for list items */
+  .text-muted ul li:hover {
+    background: #6f34fe; /* Highlight background on hover */
+    color: #fff; /* Change text color on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button styling */
+  .c-btn.h-btn {
+    background: linear-gradient(135deg, #6f34fe, #8f6bff);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(111, 52, 254, 0.4);
+  }
+  
+  .c-btn.h-btn:hover {
+    background: linear-gradient(135deg, #8f6bff, #6f34fe);
+    box-shadow: 0 6px 15px rgba(111, 52, 254, 0.6);
+    transform: translateY(-3px);
+  }
+  
+  .c-btn.h-btn:focus {
+    outline: none;
+  }
+  
+  /* Rounded button shape */
+  .c-btn.h-btn.rounded-pill {
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .text-muted ul li {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .c-btn.h-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+.skill{
+    background-color: rgb(234, 234, 249);
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.heading p{
+    font-size: 1.3rem;
+}
+
+
+/* portfolio section starts */
+#myBtnContainer{
+    margin-bottom: 45px;
+}
+#myBtnContainer button{
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;   
+  display: inline-block;
+  margin: 0 25px;
+}
+#myBtnContainer button:hover{
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus{
+    outline: none;
+}
+.post .content h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.post .card{
+    border: none;
+}
+
+
+/* styling modal group  */
+.btn-c{
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+.btn-c i{
+    color: #fca61f;
+}
+.modal-body .content span{
+    font-size: 1rem;
+}
+.modal-body .content small{
+    font-size: 1rem;
+    color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+.contact-details i{
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* footer section starts */
+footer{
+    background-color: #211e39;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+footer .link-group a:hover{
+    color: #fca61f;
+}
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+    color: #f33a7e;
+}
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+.social-links .whatsapp{
+    color: #25D366;
+}
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+.social-links .behance{
+    color: #255afc;
+}
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
